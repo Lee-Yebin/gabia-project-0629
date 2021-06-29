@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+/* 웹폰트 설정 */
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
+
+
+/* 문서의 모든 여백들을 없애는 작업 */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* body와 html내에 속하는 모든 폰트 사이즈와 컬러 그리고 행간을 초기화하는 작업*/
+body, html{
+    font-family: 'NanumSquare', '돋움', dotum, sans-serif;
+    font-size: 12px;
+    color: #333;
+    line-height: 1.5; /* 1=100% */
+}
+
+/* 불릿 없애기 list-style 초기화 */
+ul,ol,li {
+    list-style: none;
+}
+
+/* a링크 초기화 */
+a{
+    text-decoration: none;
+    color: #000000;
+}
+/* 기울어지는 스타일을 초기화 */
+em, address{
+    font-style: normal;
+}
+/* 접근성을 위한 숨김 텍스트를 제공 */
+.screen_out{
+    overflow:hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+/* float 속성 제거 */
+,clear {clear: both;}
+.clear:after {content: ''; display: block; clear: both;}

@@ -1,0 +1,270 @@
+@charset "utf-8";
+/* 헤더영역만들기 */
+#header {
+        width: 100%; 
+        height: 87px; 
+        border-bottom-width: 1px; 
+        border-bottom-color: #cccccc;  
+        border-bottom-style: solid;
+}
+#header .container {
+    width: 1200px; 
+    height: inherit; 
+    background-color: rgba(0, 0, 0, 0);
+    margin: 0 auto 0 auto;
+}
+#header .container h1 {
+    float: left;
+    margin-top: 22px; 
+    margin-right: 45px;
+}
+#header .container h1 img {}
+#header .container nav {
+    float: left;
+}
+#header .container nav .gnb {}
+#header .container nav .gnb > li {
+    float: left;
+    padding: 0 25px 0 25px;
+    position: relative;
+}
+/* gnb 6번째 메뉴 가로크기 수정 */
+#header .container nav .gnb > li:nth-child(6) .submenu {
+    width: 120%;
+}
+
+#header .container nav .gnb > li > a {
+    font-size: 20px;
+    display: block;
+    line-height: 87px;
+}
+#header .container nav .gnb > li > a:hover, 
+#header .container nav .gnb > li > a:focus {
+    color: #ff8000;
+}
+/*  서브메뉴 작업하기  */
+nav .gnb .submenu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+}
+nav .gnb .submenu li {}
+nav .gnb .submenu li a {
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    line-height: 32px;
+}
+nav .gnb .submenu li a:hover {
+    background-color: rgba(0,0,0,0.5);
+    color: #ffffff;
+}
+/* 서브메뉴 작업 종료 */
+
+
+
+
+#header .container .member {
+    float: right;
+}
+#header .container .member li {
+    float: left;
+    padding: 0 12px 0 12px;
+}
+#header .container .member li a {
+    font-size: 14px;
+    display: block;
+    line-height: 87px;
+}
+/*  banner 영역 만들기  */
+#banner {
+        width: 100%; 
+        background-image: url(../image/bg-banner1.jpg);
+        background-repeat: no-repeat;
+        background-position: center top;
+        border-bottom-style: solid;
+        border-bottom-color: #cccccc;
+        border-bottom-width: 1px;
+}
+#banner .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 133px;
+    padding-bottom: 116px;
+    padding-left: 77px;
+}
+#banner .container h2 {
+    font-size: 36px;
+    line-height: 1.5;
+    font-weight: normal;
+}
+#banner .container p {
+    font-size: 20px;
+    margin-top: 36px;
+    margin-bottom: 33px;
+}
+#banner .container em {
+    font-size: 20px;
+    color: #e47c02;
+}
+#banner .container a.more {
+    font-size: 16px;
+    display: block;
+    border-width: 1px;
+    border-color: #000;
+    border-style: solid;
+    width: 153px;
+    height: 57px;
+    text-align: center;
+    line-height: 57px;
+    margin-top: 66px;
+    transition-property: background;
+    transition-duration: 0.3s;
+}
+#banner .container a.more:hover,
+#banner .container a.more:focus {
+    color: #fff;
+    background-color: #000;
+}
+/*  관련 서비스 링크  */
+#service_link {
+        width: 100%;
+}
+#service_link .container {
+        width: 1200px;
+        margin: 0 auto;
+}
+#service_link .container > div {
+        width: 282px;
+        float: left;
+        margin-right: 24px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+}
+#service_link .container > div:last-child {
+        margin-right: 0;
+}
+#service_link .container > div h4 {
+        font-size: 24px;
+        margin-bottom: 24px;
+        text-align: center;
+}
+#service_link .container > div h4:hover {
+        text-decoration: underline;
+}
+#service_link .container > div p {
+        font-size: 14px;
+        padding-left: 55px;
+}
+/*  선택 영역 만들기  */
+#select {
+    width: 100%;
+    background-color: #1d7abd;
+}
+#select .container {
+        width: 1200px;
+        margin: 0 auto 0 auto;   /*  margin: 0 auto;  */
+        padding: 68px 0 96px 40px;
+}
+#select .container h3 {
+        font-size: 36px;
+        color: #fff;  /*  color: #ffffff;  */
+        width: 282px;
+        float: left;
+        font-weight: normal;
+}
+#select .container > div {
+        width: 282px;
+        height: 352px;
+        float: left;
+        margin-left: 24px;
+        background-color: #2986cb;
+        padding-top: 33px;
+        padding-left: 36px;
+        box-sizing: border-box;
+}
+#select .container > div h4 {
+        font-size: 24px;
+        color: #fff;
+        margin-bottom: 22px;
+}
+#select .container > div p {
+        font-size: 16px;
+        color: #fff;        
+}
+#select .container > div.experience {
+        background-image: url(../image/select-bg1.png);
+        background-repeat: no-repeat;
+        background-size: 99px;
+        background-position: 33px 188px;
+}
+#select .container > div.security {
+        background-image: url(../image/select-bg2.png);
+        background-repeat: no-repeat;
+        background-size: 93px;
+        background-position: 36px 188px;
+}
+#select .container > div.server {
+        background-image: url(../image/select-bg3.png);
+        background-repeat: no-repeat;
+        background-size: 93px;
+        background-position: 32px 199px;
+}
+/*  하단 영역 만들기  */
+#footer {
+        width: 100%; 
+}
+#footer .container {
+    width: 1200px;
+    margin: 0 auto 0 auto;    /*  margin: 0 auto;  */ 
+    padding: 56px 0 116px 0;
+    position: relative;
+}
+#footer .container .rule {
+    margin-bottom: 46px;
+}
+#footer .container .rule li {
+    float: left;
+    margin-right: 32px;
+}
+#footer .container .rule li a {
+    font-size: 16px;
+}
+#footer .container .rule li a.blue {
+    color: #1d7abd;
+}
+#footer .container address {}
+#footer .container address ul {}
+#footer .container address ul li {
+    font-size: 14px;
+    padding-bottom: 13px;
+}
+#footer .container address ul li span {
+    padding-right: 28px;
+}
+#footer .container .family {
+    position: absolute;
+    right: 0;
+    top: 56px;
+}
+#footer .container .family select {
+    font-size: 12px;
+    width: 145px;
+    height: 44px;
+    border-width: 1px;
+    border-color: #333333;
+    border-style: solid;
+    padding-left: 12px;
+}
+#footer .container .family button {
+    font-size: 12px;
+    width: 78px;
+    height: 44px;
+    border-width: 1px;
+    border-color: #424242;
+    border-style: solid;
+    background-color: #dddddd;
+    margin-left: 24px;
+}
